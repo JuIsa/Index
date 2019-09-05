@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ad</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body id="mbody">
+	
+
+	<button type = "button" onclick="myfunc()">
+		Change
+	</button>
+
+	<script type="text/javascript">
+		var color = ["blue", "lightblue", "lightgreen", "green"];
+		var i =0;
+		function myfunc(){
+			document.getElementById("mbody").style.background = color[i];
+			i++;
+			if(i>3){
+				i=0;
+			}
+		}
+	</script>
+
+</body>
+</html>
